@@ -98,7 +98,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="serviceutilizationcatalog.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="serviceutilizationcatalog.html#digesttrace" class="tsd-kind-icon">digest<wbr>Trace</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="serviceutilizationcatalog.html#digestevent" class="tsd-kind-icon">digest<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="serviceutilizationcatalog.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="serviceutilizationcatalog.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="serviceutilizationcatalog.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
@@ -134,7 +134,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.__constructor</p>
 								<ul>
-									<li>Defined in catalog.ts:20</li>
+									<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/catalog.ts#L25">catalog.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="serviceutilizationcatalog.html" class="tsd-signature-type">ServiceUtilizationCatalog</a></h4>
@@ -150,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">catalog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/iserviceutilization.html" class="tsd-signature-type">IServiceUtilization</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in catalog.ts:20</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/catalog.ts#L25">catalog.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,22 +214,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="digesttrace" class="tsd-anchor"></a>
-					<h3>digest<wbr>Trace</h3>
+					<a name="digestevent" class="tsd-anchor"></a>
+					<h3>digest<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">digest<wbr>Trace<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/itracerevent.html" class="tsd-signature-type">ITracerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">digest<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><a href="../interfaces/iawstransaction.html" class="tsd-signature-type">IAWSTransaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in catalog.ts:26</li>
+									<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/catalog.ts#L31">catalog.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <a href="../interfaces/itracerevent.html" class="tsd-signature-type">ITracerEvent</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> event: <a href="../interfaces/iawstransaction.html" class="tsd-signature-type">IAWSTransaction</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -309,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in catalog.ts:55</li>
+									<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/catalog.ts#L63">catalog.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iserviceutilization.html" class="tsd-signature-type">IServiceUtilization</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -692,7 +692,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in catalog.ts:58</li>
+									<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/catalog.ts#L66">catalog.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -793,7 +793,7 @@
 								<a href="serviceutilizationcatalog.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="serviceutilizationcatalog.html#digesttrace" class="tsd-kind-icon">digest<wbr>Trace</a>
+								<a href="serviceutilizationcatalog.html#digestevent" class="tsd-kind-icon">digest<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="serviceutilizationcatalog.html#emit" class="tsd-kind-icon">emit</a>

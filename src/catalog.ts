@@ -2,7 +2,6 @@
 
 import Debug from 'debug';
 import {EventEmitter} from 'events';
-import {ITracerEvent} from './tracer';
 
 const debug = Debug('aws-sdk-tracer:catalog');
 
@@ -16,6 +15,12 @@ export interface IServiceUtilization {
     resources: string[];
 }
 
+export interface IAWSTransaction {
+    serviceName: string;
+    operation: string;
+    params: any;
+}
+
 export class ServiceUtilizationCatalog extends EventEmitter {
     private catalog: Map<string, IServiceUtilization>;
     constructor() {
@@ -23,7 +28,10 @@ export class ServiceUtilizationCatalog extends EventEmitter {
         this.catalog = new Map<string, IServiceUtilization>();
         debug('created');
     }
-    public digestTrace(event: ITracerEvent) {
+    public digestEvent(event?: IAWSTransaction) {
+        if (!event) {
+            return;
+        }
         const entry = this.catalog.get(event.serviceName);
         let updated = false;
         if (entry) {

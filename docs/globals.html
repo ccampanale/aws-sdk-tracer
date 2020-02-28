@@ -68,6 +68,7 @@
 						<section class="tsd-index-section ">
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum"><a href="enums/awstracertype.html" class="tsd-kind-icon">AWSTracer<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/serviceutilizationcatalogevents.html" class="tsd-kind-icon">Service<wbr>Utilization<wbr>Catalog<wbr>Events</a></li>
 								<li class="tsd-kind-enum"><a href="enums/tracerevents.html" class="tsd-kind-icon">Tracer<wbr>Events</a></li>
 							</ul>
@@ -75,6 +76,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/awslogger.html" class="tsd-kind-icon">AWSLogger</a></li>
 								<li class="tsd-kind-class"><a href="classes/awspolicy.html" class="tsd-kind-icon">AWSPolicy</a></li>
 								<li class="tsd-kind-class"><a href="classes/awspolicystatement.html" class="tsd-kind-icon">AWSPolicy<wbr>Statement</a></li>
 								<li class="tsd-kind-class"><a href="classes/exporter.html" class="tsd-kind-icon">Exporter</a></li>
@@ -89,13 +91,18 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/iawslogmessage.html" class="tsd-kind-icon">IAWSLog<wbr>Message</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/iawsloggerconfig.html" class="tsd-kind-icon">IAWSLogger<wbr>Config</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/iawsloggeroptions.html" class="tsd-kind-icon">IAWSLogger<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iawspolicystatement.html" class="tsd-kind-icon">IAWSPolicy<wbr>Statement</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iawssdktracerbundle.html" class="tsd-kind-icon">IAWSSDKTracer<wbr>Bundle</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/iawstransaction.html" class="tsd-kind-icon">IAWSTransaction</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iexport.html" class="tsd-kind-icon">IExport</a></li>
 								<li class="tsd-kind-interface tsd-is-not-exported"><a href="interfaces/iexporterlibrary.html" class="tsd-kind-icon">IExporter<wbr>Library</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ifilesystemexporterconfig.html" class="tsd-kind-icon">IFilesystem<wbr>Exporter<wbr>Config</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ifilesystemexporteroptions.html" class="tsd-kind-icon">IFilesystem<wbr>Exporter<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ihttpexporterconfig.html" class="tsd-kind-icon">IHTTPExporter<wbr>Config</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ilogger.html" class="tsd-kind-icon">ILogger</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iserviceutilization.html" class="tsd-kind-icon">IService<wbr>Utilization</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iserviceutilizationdata.html" class="tsd-kind-icon">IService<wbr>Utilization<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/itracedrequest.html" class="tsd-kind-icon">ITraced<wbr>Request</a></li>
@@ -125,6 +132,7 @@
 								<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#filepath" class="tsd-kind-icon">filepath</a></li>
 								<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#loaded" class="tsd-kind-icon">loaded</a></li>
 								<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#policy" class="tsd-kind-icon">policy</a></li>
+								<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#regex" class="tsd-kind-icon">regex</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -137,6 +145,7 @@
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-object-literal"><a href="globals.html#defaultexporterconfig" class="tsd-kind-icon">Default<wbr>Exporter<wbr>Config</a></li>
+								<li class="tsd-kind-object-literal"><a href="globals.html#defaultloggerconfig" class="tsd-kind-icon">Default<wbr>Logger<wbr>Config</a></li>
 								<li class="tsd-kind-object-literal"><a href="globals.html#defaultwrapperconfig" class="tsd-kind-icon">Default<wbr>Wrapper<wbr>Config</a></li>
 								<li class="tsd-kind-object-literal"><a href="globals.html#exporters" class="tsd-kind-icon">Exporters</a></li>
 							</ul>
@@ -152,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">Exporter<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in exporters/base.ts:12</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/base.ts#L12">exporters/base.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -167,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">Exporter<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in exporters/base.ts:6</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/base.ts#L6">exporters/base.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">IHTTPExporter<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/ihttpexporterconfig.html" class="tsd-signature-type">IHTTPExporterConfig</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in exporters/http.ts:18</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L18">exporters/http.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Tracer<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="interfaces/itracerconfig.html" class="tsd-signature-type">ITracerConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in tracer.ts:24</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/tracer.ts#L24">tracer.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,21 +209,22 @@
 					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in commands/gen-policy.ts:7</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/commands/gen-policy.ts#L7">commands/gen-policy.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
 					<a name="debug" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> debug</h3>
-					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Debugger</span><span class="tsd-signature-symbol"> =&nbsp;Debug(&#x27;aws-sdk-tracer:catalog&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Debugger</span><span class="tsd-signature-symbol"> =&nbsp;Debug(&#x27;aws-sdk-tracer:tracer&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in exporters/filesystem.ts:11</li>
-							<li>Defined in exporters/http.ts:9</li>
-							<li>Defined in wrapper.ts:11</li>
-							<li>Defined in tracer.ts:10</li>
-							<li>Defined in catalog.ts:7</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/catalog.ts#L6">catalog.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/filesystem.ts#L11">exporters/filesystem.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L9">exporters/http.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L10">logger.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L13">wrapper.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/tracer.ts#L10">tracer.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +234,7 @@
 					<div class="tsd-signature tsd-kind-icon">filepath<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&#x27;/tmp/aws-sdk-tracer.json&#x27; || process.env.AWS_SDK_TRACER_OUTPUT</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in commands/gen-policy.ts:9</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/commands/gen-policy.ts#L9">commands/gen-policy.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +244,7 @@
 					<div class="tsd-signature tsd-kind-icon">loaded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;JSON.parse(fs.readFileSync(filepath).toString())</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in commands/gen-policy.ts:19</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/commands/gen-policy.ts#L19">commands/gen-policy.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +254,17 @@
 					<div class="tsd-signature tsd-kind-icon">policy<span class="tsd-signature-symbol">:</span> <a href="classes/awspolicy.html" class="tsd-signature-type">AWSPolicy</a><span class="tsd-signature-symbol"> =&nbsp;PolicyGenerator.fromUtilizationData(loaded)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in commands/gen-policy.ts:21</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/commands/gen-policy.ts#L21">commands/gen-policy.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
+					<a name="regex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> regex</h3>
+					<div class="tsd-signature tsd-kind-icon">regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/\[AWS (?&lt;serviceName&gt;.{3}) (?&lt;statusCode&gt;\d{3}) (?&lt;responseTime&gt;.+s) (?&lt;retires&gt;\d{1}) retries\] (?&lt;action&gt;.+)\((?&lt;paramsString&gt;.+)\)/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L13">logger.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:12</li>
+									<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/index.ts#L12">index.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -286,8 +306,8 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Exporter<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in exporters/filesystem.ts:23</li>
-							<li>Defined in exporters/http.ts:20</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/filesystem.ts#L23">exporters/filesystem.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L20">exporters/http.ts:20</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -296,7 +316,7 @@
 						<div class="tsd-signature tsd-kind-icon">endpoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/http.ts:23</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L23">exporters/http.ts:23</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -306,7 +326,7 @@
 						<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;aws-sdk-tracer.json&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/filesystem.ts:25</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/filesystem.ts#L25">exporters/filesystem.ts:25</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -316,7 +336,7 @@
 						<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;string, string&gt;()</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/http.ts:24</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L24">exporters/http.ts:24</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -326,7 +346,7 @@
 						<div class="tsd-signature tsd-kind-icon">hostname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/http.ts:22</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L22">exporters/http.ts:22</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -336,7 +356,7 @@
 						<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;/tmp&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/filesystem.ts:24</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/filesystem.ts#L24">exporters/filesystem.ts:24</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -346,7 +366,27 @@
 						<div class="tsd-signature tsd-kind-icon">protocol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;https&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/http.ts:21</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/http.ts#L21">exporters/http.ts:21</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal">
+					<a name="defaultloggerconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Default<wbr>Logger<wbr>Config</h3>
+					<div class="tsd-signature tsd-kind-icon">Default<wbr>Logger<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L25">logger.ts:25</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="defaultloggerconfig.erroronparsefailure" class="tsd-anchor"></a>
+						<h3>error<wbr>OnParse<wbr>Failure</h3>
+						<div class="tsd-signature tsd-kind-icon">error<wbr>OnParse<wbr>Failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L26">logger.ts:26</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -357,7 +397,7 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Wrapper<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in wrapper.ts:26</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L35">wrapper.ts:35</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -366,7 +406,17 @@
 						<div class="tsd-signature tsd-kind-icon">exporters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in wrapper.ts:27</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L37">wrapper.ts:37</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="defaultwrapperconfig.tracer" class="tsd-anchor"></a>
+						<h3>tracer</h3>
+						<div class="tsd-signature tsd-kind-icon">tracer<span class="tsd-signature-symbol">:</span> <a href="enums/awstracertype.html#request" class="tsd-signature-type">Request</a><span class="tsd-signature-symbol"> =&nbsp;AWSTracerType.Request</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L36">wrapper.ts:36</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -377,7 +427,7 @@
 					<div class="tsd-signature tsd-kind-icon">Exporters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in exporters/index.ts:13</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/index.ts#L13">exporters/index.ts:13</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -386,7 +436,7 @@
 						<div class="tsd-signature tsd-kind-icon">base<span class="tsd-signature-symbol">:</span> <a href="classes/exporter.html" class="tsd-signature-type">Exporter</a><span class="tsd-signature-symbol"> =&nbsp;Base.Exporter</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/index.ts:14</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/index.ts#L14">exporters/index.ts:14</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -396,7 +446,7 @@
 						<div class="tsd-signature tsd-kind-icon">filesystem<span class="tsd-signature-symbol">:</span> <a href="classes/filesystemexporter.html" class="tsd-signature-type">FilesystemExporter</a><span class="tsd-signature-symbol"> =&nbsp;Filesystem.FilesystemExporter</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/index.ts:15</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/index.ts#L15">exporters/index.ts:15</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -406,7 +456,7 @@
 						<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <a href="classes/httpexporter.html" class="tsd-signature-type">HTTPExporter</a><span class="tsd-signature-symbol"> =&nbsp;HTTP.HTTPExporter</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in exporters/index.ts:16</li>
+								<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/index.ts#L16">exporters/index.ts:16</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -424,10 +474,16 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
+						<a href="enums/awstracertype.html" class="tsd-kind-icon">AWSTracer<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/serviceutilizationcatalogevents.html" class="tsd-kind-icon">Service<wbr>Utilization<wbr>Catalog<wbr>Events</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/tracerevents.html" class="tsd-kind-icon">Tracer<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/awslogger.html" class="tsd-kind-icon">AWSLogger</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/awspolicy.html" class="tsd-kind-icon">AWSPolicy</a>
@@ -457,10 +513,22 @@
 						<a href="classes/wrapper.html" class="tsd-kind-icon">Wrapper</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/iawslogmessage.html" class="tsd-kind-icon">IAWSLog<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iawsloggerconfig.html" class="tsd-kind-icon">IAWSLogger<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iawsloggeroptions.html" class="tsd-kind-icon">IAWSLogger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/iawspolicystatement.html" class="tsd-kind-icon">IAWSPolicy<wbr>Statement</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iawssdktracerbundle.html" class="tsd-kind-icon">IAWSSDKTracer<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iawstransaction.html" class="tsd-kind-icon">IAWSTransaction</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iexport.html" class="tsd-kind-icon">IExport</a>
@@ -476,6 +544,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ihttpexporterconfig.html" class="tsd-kind-icon">IHTTPExporter<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ilogger.html" class="tsd-kind-icon">ILogger</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iserviceutilization.html" class="tsd-kind-icon">IService<wbr>Utilization</a>
@@ -534,11 +605,17 @@
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#policy" class="tsd-kind-icon">policy</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#regex" class="tsd-kind-icon">regex</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#wrapawssdk" class="tsd-kind-icon">wrapAWSSDK</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#defaultexporterconfig" class="tsd-kind-icon">Default<wbr>Exporter<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaultloggerconfig" class="tsd-kind-icon">Default<wbr>Logger<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#defaultwrapperconfig" class="tsd-kind-icon">Default<wbr>Wrapper<wbr>Config</a>

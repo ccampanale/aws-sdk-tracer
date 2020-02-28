@@ -81,6 +81,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iwrapperconfig.html#exporters" class="tsd-kind-icon">exporters</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iwrapperconfig.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iwrapperconfig.html#tracer" class="tsd-kind-icon">tracer</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,17 +95,27 @@
 					<div class="tsd-signature tsd-kind-icon">exporters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in wrapper.ts:18</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L26">wrapper.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> logger</h3>
-					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in wrapper.ts:19</li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L27">wrapper.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tracer" class="tsd-anchor"></a>
+					<h3>tracer</h3>
+					<div class="tsd-signature tsd-kind-icon">tracer<span class="tsd-signature-symbol">:</span> <a href="../enums/awstracertype.html" class="tsd-signature-type">AWSTracerType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/wrapper.ts#L25">wrapper.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,6 +141,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="iwrapperconfig.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iwrapperconfig.html#tracer" class="tsd-kind-icon">tracer</a>
 							</li>
 						</ul>
 					</li>

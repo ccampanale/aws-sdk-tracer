@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IExport | aws-sdk-tracer</title>
+	<title>IAWSLoggerConfig | aws-sdk-tracer</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="iexport.html">IExport</a>
+					<a href="iawsloggerconfig.html">IAWSLoggerConfig</a>
 				</li>
 			</ul>
-			<h1>Interface IExport</h1>
+			<h1>Interface IAWSLoggerConfig</h1>
 		</div>
 	</div>
 </header>
@@ -68,16 +68,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IExport</span>
+						<span class="target">IAWSLoggerConfig</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/exporter.html" class="tsd-signature-type">Exporter</a></li>
-					<li><a href="../classes/filesystemexporter.html" class="tsd-signature-type">FilesystemExporter</a></li>
-					<li><a href="../classes/httpexporter.html" class="tsd-signature-type">HTTPExporter</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -87,7 +79,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iexport.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawsloggerconfig.html#erroronparsefailure" class="tsd-kind-icon">error<wbr>OnParse<wbr>Failure</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawsloggerconfig.html#logger" class="tsd-kind-icon">logger</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,12 +89,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#exportertype" class="tsd-signature-type">ExporterType</a></div>
+					<a name="erroronparsefailure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error<wbr>OnParse<wbr>Failure</h3>
+					<div class="tsd-signature tsd-kind-icon">error<wbr>OnParse<wbr>Failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/base.ts#L9">exporters/base.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L16">logger.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="ilogger.html" class="tsd-signature-type">ILogger</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L17">logger.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,10 +123,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="iexport.html" class="tsd-kind-icon">IExport</a>
+						<a href="iawsloggerconfig.html" class="tsd-kind-icon">IAWSLogger<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iexport.html#type" class="tsd-kind-icon">type</a>
+								<a href="iawsloggerconfig.html#erroronparsefailure" class="tsd-kind-icon">error<wbr>OnParse<wbr>Failure</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iawsloggerconfig.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 						</ul>
 					</li>
