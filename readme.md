@@ -12,6 +12,12 @@ The primary goal of this tracing is to facilitate developer knowledge of AWS ser
 
 ## Usage
 
+Install the package using NPM as you would:
+
+```
+npm install --save aws-sdk-tracer
+```
+
 The quickest way to get started is to simply load the library and `aws-sdk` together:
 
 ```js

@@ -1,6 +1,6 @@
-// Type defintions for Monarch-SDK
-// Project: monarch-sdk
-// Definitions by: NIAID OEB Platform Team <niaidoebplatformteam@mail.nih.gov>
+// Type defintions for AWSSDKTracer
+// Project: aws-sdk-tracer
+// Definitions by: ccampanale@gmail.com
 
 export * from './src';
 export as namespace AWSSDKTracer;
