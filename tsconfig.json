@@ -1,0 +1,45 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "sourceMap": true,
+    "target": "ES2016",
+    "baseUrl": "./",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "typeRoots": [
+      "node_modules/@types",
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "types"
+  ],
+  "plugins": [
+    {
+      "name": "typescript-tslint-plugin"
+    }
+  ],
+  "typedocOptions": {
+    "inputFiles": [
+      "./src"
+    ],
+    "mode": "file",
+    "out": "docs",
+    "disableOutputCheck": true,
+    "excludeExternals": true,
+    "ignoreCompilerErrors": true
+  }
+}

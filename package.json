@@ -1,0 +1,41 @@
+{
+  "name": "aws-sdk-tracer",
+  "version": "0.0.1",
+  "description": "Tracing support for aws-sdk provided with a simple wraper and built-in CLI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/simple.js",
+    "docs": "rm -rf ./docs/* && typedoc ./src"
+  },
+  "bin": {
+    "gen-policy": "./lib/commands/gen-policy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccampanale/aws-sdk-tracer.git"
+  },
+  "keywords": [
+    "aws",
+    "aws-sdk",
+    "tracing",
+    "policies"
+  ],
+  "author": "ccampanale@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccampanale/aws-sdk-tracer/issues"
+  },
+  "homepage": "https://github.com/ccampanale/aws-sdk-tracer#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/debug": "^4.1.5",
+    "@types/events": "^3.0.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.7.6",
+    "aws-sdk": "^2.627.0"
+  }
+}
