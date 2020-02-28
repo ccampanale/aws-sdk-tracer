@@ -36,6 +36,8 @@ export enum TracerEvents {
 }
 
 export class Tracer extends EventEmitter implements ITracer {
+    public readonly tracerClass: typeof AWS.Request;
+    public readonly originalRequest: typeof AWS.Request = AWS.Request;
     private tracerConfig: ITracerConfig & ITracerOptions;
     private wrapper: Wrapper;
     private traces: ITracerEvent[];
@@ -57,11 +59,8 @@ export class Tracer extends EventEmitter implements ITracer {
             }
             this.wrapper.catalog.digestEvent(trace);
         });
-        debug('created');
-    }
-    public getTracedRequestClass() {
         const self = this;
-        return class TracedRequest<D, E>
+        this.tracerClass = class TracedRequest<D, E>
             extends AWS.Request<D, E>
             implements ITracedRequest<D, E> {
             private readonly TRACER: Tracer = self;
@@ -94,6 +93,7 @@ export class Tracer extends EventEmitter implements ITracer {
                 return this.tracedService.endpoint.host.split('.')[0];
             }
         };
+        debug('created');
     }
     private handleRequestSuccess<D, E>(
         request: ITracedRequest<D, E>,

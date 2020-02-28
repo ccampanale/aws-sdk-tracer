@@ -69,6 +69,11 @@ export class Wrapper implements IWrapper {
         debug('created');
     }
     public wrap(awssdk: typeof AWS): void {
+        if (this.isAlreadyWrapped(awssdk)) {
+            throw new Error(
+                'AWS SDK is already wrapped; did you mean to unwrap()?'
+            );
+        }
         switch (this.config.tracer) {
             case AWSTracerType.Logger:
                 this.attachLogger(awssdk);
@@ -78,6 +83,14 @@ export class Wrapper implements IWrapper {
                 break;
             default:
                 throw new Error(`unsupporter tracer type: ${this.config.tracer}`);
+        }
+    }
+    public unwrap(awssdk: typeof AWS): void {
+        if (awssdk.config.logger instanceof AWSLogger) {
+            awssdk.config.logger = undefined;
+        }
+        if (awssdk.Request instanceof this.tracer.tracerClass) {
+            awssdk.Request = this.tracer.originalRequest;
         }
     }
     public printUtilization(logger = console, json = false) {
@@ -110,7 +123,11 @@ export class Wrapper implements IWrapper {
         debug('logger attached');
     }
     private replaceRequest(awssdk: typeof AWS): void {
-        awssdk.Request = this.tracer.getTracedRequestClass();
+        awssdk.Request = this.tracer.tracerClass;
         debug('request replaced');
+    }
+    private isAlreadyWrapped(awssdk: typeof AWS): boolean {
+        return awssdk.config.logger instanceof AWSLogger
+            || awssdk.Request instanceof this.tracer.tracerClass;
     }
 }
