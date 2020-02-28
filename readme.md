@@ -74,3 +74,7 @@ There is a lot more that can be done; this is only touching the surface.
     - the goal of this exporter would be for private utilization telemetry data
   - better/more tests
   - better options and configurability of wrapper and other components
+
+## TypeDocs
+
+TypeDocs can be found onthe associated GitHub IO: https://ccampanale.github.io/aws-sdk-tracer/
