@@ -55,7 +55,7 @@ export class Tracer extends EventEmitter implements ITracer {
             if (this.tracerConfig.logger) {
                 this.tracerConfig.logger.log(trace);
             }
-            this.wrapper.catalog.digestTrace(trace);
+            this.wrapper.catalog.digestEvent(trace);
         });
         debug('created');
     }

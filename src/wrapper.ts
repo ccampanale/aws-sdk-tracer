@@ -5,7 +5,9 @@ import Debug from 'debug';
 import _ from 'lodash';
 
 import {ServiceUtilizationCatalog} from './catalog';
+import {ILogger} from './common';
 import {Base, Exporters} from './exporters';
+import {AWSLogger} from './logger';
 import {Tracer} from './tracer';
 
 const debug = Debug('aws-sdk-tracer:wrapper');
@@ -14,16 +16,24 @@ export interface IWrapper {
     wrap(awssdk: typeof AWS): void;
 }
 
+export enum AWSTracerType {
+    Request = 'Request',
+    Logger = 'Logger',
+}
+
 export interface IWrapperConfig {
+    tracer: AWSTracerType;
     exporters: string[];
-    logger?: { log(...args: any[]): void };
+    logger?: ILogger;
 }
 
 export interface IWrapperOptions {
-    logger?: { log(...args: any[]): void };
+    tracer?: AWSTracerType;
+    logger?: ILogger;
 }
 
 export const DefaultWrapperConfig: IWrapperConfig = {
+    tracer: AWSTracerType.Request,
     exporters: [],
 };
 
@@ -59,7 +69,16 @@ export class Wrapper implements IWrapper {
         debug('created');
     }
     public wrap(awssdk: typeof AWS): void {
-        awssdk.Request = this.tracer.getTracedRequestClass();
+        switch (this.config.tracer) {
+            case AWSTracerType.Logger:
+                this.attachLogger(awssdk);
+                break;
+            case AWSTracerType.Request:
+                this.replaceRequest(awssdk);
+                break;
+            default:
+                throw new Error(`unsupporter tracer type: ${this.config.tracer}`);
+        }
     }
     public printUtilization(logger = console, json = false) {
         const usage = this.catalog.getServiceUsage();
@@ -80,5 +99,18 @@ export class Wrapper implements IWrapper {
             exporter.init(this.catalog);
         });
         debug('exporters initialized');
+    }
+    private attachLogger(awssdk: typeof AWS): void {
+        awssdk.config.logger = new AWSLogger(
+            this,
+            {
+                logger: this.config.logger,
+            }
+        );
+        debug('logger attached');
+    }
+    private replaceRequest(awssdk: typeof AWS): void {
+        awssdk.Request = this.tracer.getTracedRequestClass();
+        debug('request replaced');
     }
 }
