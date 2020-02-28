@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-tracer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tracing support for aws-sdk provided with a simple wraper and built-in CLI.",
   "main": "index.js",
   "scripts": {
