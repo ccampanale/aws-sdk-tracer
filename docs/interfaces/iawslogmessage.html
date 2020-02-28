@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IExport | aws-sdk-tracer</title>
+	<title>IAWSLogMessage | aws-sdk-tracer</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="iexport.html">IExport</a>
+					<a href="iawslogmessage.html">IAWSLogMessage</a>
 				</li>
 			</ul>
-			<h1>Interface IExport</h1>
+			<h1>Interface IAWSLogMessage</h1>
 		</div>
 	</div>
 </header>
@@ -68,16 +68,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IExport</span>
+						<span class="target">IAWSLogMessage</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/exporter.html" class="tsd-signature-type">Exporter</a></li>
-					<li><a href="../classes/filesystemexporter.html" class="tsd-signature-type">FilesystemExporter</a></li>
-					<li><a href="../classes/httpexporter.html" class="tsd-signature-type">HTTPExporter</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -87,7 +79,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iexport.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawslogmessage.html#operation" class="tsd-kind-icon">operation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawslogmessage.html#params" class="tsd-kind-icon">params</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawslogmessage.html#responsecode" class="tsd-kind-icon">response<wbr>Code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawslogmessage.html#responsetime" class="tsd-kind-icon">response<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawslogmessage.html#retries" class="tsd-kind-icon">retries</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iawslogmessage.html#servicename" class="tsd-kind-icon">service<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,12 +93,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#exportertype" class="tsd-signature-type">ExporterType</a></div>
+					<a name="operation" class="tsd-anchor"></a>
+					<h3>operation</h3>
+					<div class="tsd-signature tsd-kind-icon">operation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/exporters/base.ts#L9">exporters/base.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L34">logger.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="params" class="tsd-anchor"></a>
+					<h3>params</h3>
+					<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L35">logger.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="responsecode" class="tsd-anchor"></a>
+					<h3>response<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">response<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L31">logger.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="responsetime" class="tsd-anchor"></a>
+					<h3>response<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">response<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L32">logger.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="retries" class="tsd-anchor"></a>
+					<h3>retries</h3>
+					<div class="tsd-signature tsd-kind-icon">retries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L33">logger.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="servicename" class="tsd-anchor"></a>
+					<h3>service<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">service<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ccampanale/aws-sdk-tracer/blob/0e62cbf/src/logger.ts#L30">logger.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,10 +167,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="iexport.html" class="tsd-kind-icon">IExport</a>
+						<a href="iawslogmessage.html" class="tsd-kind-icon">IAWSLog<wbr>Message</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iexport.html#type" class="tsd-kind-icon">type</a>
+								<a href="iawslogmessage.html#operation" class="tsd-kind-icon">operation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iawslogmessage.html#params" class="tsd-kind-icon">params</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iawslogmessage.html#responsecode" class="tsd-kind-icon">response<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iawslogmessage.html#responsetime" class="tsd-kind-icon">response<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iawslogmessage.html#retries" class="tsd-kind-icon">retries</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iawslogmessage.html#servicename" class="tsd-kind-icon">service<wbr>Name</a>
 							</li>
 						</ul>
 					</li>
