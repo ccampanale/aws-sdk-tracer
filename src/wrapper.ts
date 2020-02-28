@@ -68,6 +68,9 @@ export class Wrapper implements IWrapper {
         this.setupCatalogEvents();
         debug('created');
     }
+    public setTracer(type: AWSTracerType) {
+        this.config.tracer = type;
+    }
     public wrap(awssdk: typeof AWS): void {
         if (this.isAlreadyWrapped(awssdk)) {
             throw new Error(
